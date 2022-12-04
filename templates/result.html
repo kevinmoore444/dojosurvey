@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .container{
+            border: black solid 3px;
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h2>Submitted Info</h2>
+        <p>Name:    {{session.yourname}}</p>
+        <p>Dojo Location:   {{session.dojolocation}}</p>
+        <p>Favorite Language:   {{session.favoritelanguage}}</p>
+        <p>Comment:   {{session.comment}}</p>
+        <a href="/clear_session">Go Back</a>
+    </div>
+</body>
+</html>
